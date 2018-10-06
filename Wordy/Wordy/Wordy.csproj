@@ -41,15 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bridge\Wordy.cs" />
+    <Compile Include="Effects\CaseEffect.cs" />
     <Compile Include="Effects\Effect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\EffectManager.cs" />
+    <Compile Include="Tools\SubstringFinder.cs" />
+    <Compile Include="Types\Language.cs" />
+    <Compile Include="Types\SubstringLocation.cs" />
+    <Compile Include="Types\TextCase.cs" />
+    <Compile Include="Types\TextChange.cs" />
+    <Compile Include="Types\TextRotation.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Bridge\" />
     <Folder Include="Customization\" />
     <Folder Include="Data\" />
-    <Folder Include="Tools\" />
-    <Folder Include="Types\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

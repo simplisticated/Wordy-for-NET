@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using Wordy.Bridge;
 
 namespace Demo
 {
@@ -14,7 +7,14 @@ namespace Demo
     {
         public MainForm()
         {
-            InitializeComponent();
+            this.InitializeComponent();
+            this.InitializeTitleLabel();
+        }
+
+        private void InitializeTitleLabel()
+        {
+            this.titleLabel.Text = UseWordyTo.MakeEffects("Wordy Demo")
+                .GetResult();
         }
     }
 }

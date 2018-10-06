@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wordy", "Wordy\Wordy.csproj", "{F7ADB621-7426-45C1-8720-5A74651C7262}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{0B72EE3D-C3FD-45EE-86BF-88180608CD59}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F7ADB621-7426-45C1-8720-5A74651C7262} = {F7ADB621-7426-45C1-8720-5A74651C7262}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

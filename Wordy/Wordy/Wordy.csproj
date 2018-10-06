@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bridge\Bridge.cs" />
+    <Compile Include="Customization\Plugin.cs" />
     <Compile Include="Data\Rotation\RotationStore.cs" />
     <Compile Include="Data\Rotation\TextRotationRule.cs" />
     <Compile Include="Data\Transliteration\TransliterationRule.cs" />
@@ -60,8 +61,6 @@
     <Compile Include="Types\TextChange.cs" />
     <Compile Include="Types\TextRotation.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Customization\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

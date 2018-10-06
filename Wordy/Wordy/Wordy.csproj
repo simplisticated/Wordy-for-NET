@@ -42,8 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bridge\Bridge.cs" />
+    <Compile Include="Data\Rotation\RotationStore.cs" />
+    <Compile Include="Data\Rotation\TextRotationRule.cs" />
     <Compile Include="Effects\CaseEffect.cs" />
     <Compile Include="Effects\Effect.cs" />
+    <Compile Include="Effects\InversionEffect.cs" />
+    <Compile Include="Effects\RotationEffect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\EffectManager.cs" />
     <Compile Include="Tools\SubstringFinder.cs" />
@@ -55,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Customization\" />
-    <Folder Include="Data\" />
+    <Folder Include="Data\Transliteration\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

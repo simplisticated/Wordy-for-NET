@@ -1,4 +1,5 @@
 ﻿using Wordy.Tools;
+using Wordy.Types;
 
 namespace Wordy.Bridge
 {
@@ -7,6 +8,11 @@ namespace Wordy.Bridge
         public static EffectManager MakeEffects(string sourceText)
         {
             return new EffectManager(sourceText);
+        }
+
+        public static TransliterationManager Transliterate(Language from, Language to)
+        {
+            return new TransliterationManager(from, to);
         }
     }
 }

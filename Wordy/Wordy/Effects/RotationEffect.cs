@@ -33,6 +33,7 @@ namespace Wordy.Effects
             for (int letterIndex = 0; letterIndex < textLength; letterIndex++)
             {
                 var sourceLetter = sourceText.Substring(letterIndex, 1);
+
                 var isUppercase = char.IsUpper(sourceLetter[0]);
                 var filteredLetter = string.Copy(sourceLetter);
 
@@ -41,6 +42,12 @@ namespace Wordy.Effects
                     var rule = rotationStore[ruleIndex];
                     var isNormal = string.Equals(sourceLetter.ToLower(), rule.Normal.ToLower());
                     var isRotated = string.Equals(sourceLetter.ToLower(), rule.Rotated.ToLower());
+                    var ruleContainsLetter = isNormal || isRotated;
+
+                    if (!ruleContainsLetter)
+                    {
+                        continue;
+                    }
 
                     switch (this.Rotation)
                     {
@@ -61,14 +68,14 @@ namespace Wordy.Effects
                             {
                                 filteredLetter = rule.Rotated;
                             }
-                            else
+                            else if(isRotated)
                             {
                                 filteredLetter = rule.Normal;
                             }
                             break;
                     }
 
-                    var foundAppropriateRule = isNormal || isRotated;
+                    var foundAppropriateRule = ruleContainsLetter;
 
                     if (foundAppropriateRule)
                     {

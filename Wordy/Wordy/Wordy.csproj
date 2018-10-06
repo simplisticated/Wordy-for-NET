@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bridge\Wordy.cs" />
+    <Compile Include="Bridge\Bridge.cs" />
     <Compile Include="Effects\CaseEffect.cs" />
     <Compile Include="Effects\Effect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

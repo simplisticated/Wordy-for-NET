@@ -20,6 +20,14 @@
 
 ## How to Get Started
 
+Use `NuGet`.
+
+## Requirements
+
+.NET Framework 4.6.1.
+
+## Usage
+
 The project is currently in development process. Documentation will be published soon.
 
 ## License

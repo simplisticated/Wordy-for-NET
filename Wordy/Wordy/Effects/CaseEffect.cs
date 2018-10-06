@@ -11,7 +11,7 @@ namespace Wordy.Effects
     {
         protected TextCase TextCase { get; private set; }
 
-        public CaseEffect(TextCase textCase)
+        public CaseEffect(TextCase textCase) : base()
         {
             this.TextCase = TextCase;
         }

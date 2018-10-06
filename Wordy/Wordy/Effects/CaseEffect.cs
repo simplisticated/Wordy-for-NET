@@ -13,7 +13,7 @@ namespace Wordy.Effects
 
         public CaseEffect(TextCase textCase) : base()
         {
-            this.TextCase = TextCase;
+            this.TextCase = textCase;
         }
 
         public override string GetFilteredText(string sourceText)

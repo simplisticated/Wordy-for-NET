@@ -6,6 +6,9 @@
 	<a href="https://http://www.android.com">
 		<img src="https://img.shields.io/badge/.net framework-4.6.1-blue.svg?style=flat">
 	</a>
+	<a href="https://http://www.android.com">
+		<img src="https://img.shields.io/badge/nuget-0.1-blue.svg?style=flat">
+	</a>
 	<a href="https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)">
 		<img src="https://img.shields.io/badge/License-Apache 2.0-blue.svg?style=flat">
 	</a>

@@ -1,5 +1,7 @@
 ﻿using System.Windows.Forms;
 using Wordy.Bridge;
+using Wordy.Effects;
+using Wordy.Types;
 
 namespace Demo
 {
@@ -14,6 +16,7 @@ namespace Demo
         private void InitializeTitleLabel()
         {
             this.titleLabel.Text = UseWordyTo.MakeEffects("Wordy Demo")
+                .Apply(new RotationEffect(TextRotation.UpsideDown, true))
                 .GetResult();
         }
     }

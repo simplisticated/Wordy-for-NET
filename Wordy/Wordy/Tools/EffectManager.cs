@@ -16,7 +16,7 @@ namespace Wordy.Tools
             this.Changes = new List<TextChange>();
         }
 
-        public EffectManager apply(Effect effect)
+        public EffectManager Apply(Effect effect)
         {
             var location = new SubstringLocation(0, this.SourceText.Length - 1);
             var change = new TextChange(effect, location);

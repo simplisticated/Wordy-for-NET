@@ -44,6 +44,8 @@
     <Compile Include="Bridge\Bridge.cs" />
     <Compile Include="Data\Rotation\RotationStore.cs" />
     <Compile Include="Data\Rotation\TextRotationRule.cs" />
+    <Compile Include="Data\Transliteration\TransliterationRule.cs" />
+    <Compile Include="Data\Transliteration\TransliterationStore.cs" />
     <Compile Include="Effects\CaseEffect.cs" />
     <Compile Include="Effects\Effect.cs" />
     <Compile Include="Effects\InversionEffect.cs" />
@@ -51,6 +53,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\EffectManager.cs" />
     <Compile Include="Tools\SubstringFinder.cs" />
+    <Compile Include="Tools\TransliterationManager.cs" />
     <Compile Include="Types\Language.cs" />
     <Compile Include="Types\SubstringLocation.cs" />
     <Compile Include="Types\TextCase.cs" />
@@ -59,7 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Customization\" />
-    <Folder Include="Data\Transliteration\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

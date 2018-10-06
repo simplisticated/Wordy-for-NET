@@ -24,7 +24,7 @@ namespace Wordy.Tools
             return this;
         }
 
-        public EffectManager apply(Effect effect, int startIndex, int endIndex)
+        public EffectManager Apply(Effect effect, int startIndex, int endIndex)
         {
             var location = new SubstringLocation(startIndex, endIndex);
             var change = new TextChange(effect, location);

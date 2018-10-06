@@ -10,7 +10,13 @@ namespace Wordy.Effects
 
         protected bool CaseSensitive { get; private set; }
 
-        public RotationEffect(TextRotation rotation, bool caseSensitive = false)
+        public RotationEffect(TextRotation rotation) : base()
+        {
+            this.Rotation = rotation;
+            this.CaseSensitive = true;
+        }
+
+        public RotationEffect(TextRotation rotation, bool caseSensitive)
         {
             this.Rotation = rotation;
             this.CaseSensitive = caseSensitive;
